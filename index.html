@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f4ef">
+  <meta name="description" content="Индивидуальная онлайн-коуч-сессия для женщин: разберём ситуацию, выберем ближайшую цель и составим план первого шага. 40–60 минут, 2 000 ₽." />
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Коуч-сессия для женщин — ясность и первый шаг">
+  <meta property="og:description" content="Индивидуальная онлайн-встреча, чтобы выбрать приоритет и понять, с чего начать. 40–60 минут, 2 000 ₽." />
+  <title>Коуч-сессия для женщин — ясность и первый шаг</title>
+  <style>
+    :root {
+      --ink: #21302d;
+      --muted: #606d68;
+      --paper: #f7f4ef;
+      --white: #fffefa;
+      --green: #244d43;
+      --green-deep: #17372f;
+      --mint: #dce8df;
+      --peach: #e3a88f;
+      --line: #d9dfd8;
+      --serif: Georgia, "Times New Roman", serif;
+      color-scheme: light;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 17px; line-height: 1.65; }
+    a { color: inherit; }
+    .shell { width: min(1160px, calc(100% - 48px)); margin: 0 auto; }
+    .topbar { display: flex; justify-content: space-between; align-items: center; padding: 24px 0; }
+    .brand { display: flex; align-items: center; gap: 11px; color: var(--green-deep); font-weight: 650; letter-spacing: .01em; text-decoration: none; }
+    .brand-mark { display: grid; width: 37px; height: 37px; place-items: center; border: 1px solid #b8c9bd; border-radius: 50%; font-family: var(--serif); font-size: 20px; color: var(--green); }
+    .top-note { color: var(--muted); font-size: 14px; }
+    .hero { position: relative; display: grid; grid-template-columns: 1.08fr .92fr; gap: 48px; align-items: center; padding: 60px 0 92px; }
+    .eyebrow { display: inline-flex; align-items: center; gap: 10px; color: var(--green); font-size: 13px; font-weight: 750; letter-spacing: .14em; text-transform: uppercase; }
+    .eyebrow::before { content: ""; width: 28px; height: 1px; background: var(--peach); }
+    h1, h2, h3, p { margin-top: 0; }
+    h1 { max-width: 680px; margin: 21px 0 23px; font-family: var(--serif); font-size: clamp(44px, 6vw, 72px); font-weight: 400; letter-spacing: -.045em; line-height: 1.02; }
+    .hero-copy { max-width: 600px; color: var(--muted); font-size: 19px; line-height: 1.65; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 13px; align-items: center; margin-top: 31px; }
+    .button { display: inline-flex; justify-content: center; align-items: center; min-height: 54px; padding: 14px 23px; border: 0; border-radius: 999px; background: var(--green); color: white; font-size: 15px; font-weight: 700; text-decoration: none; transition: transform .18s ease, background .18s ease; }
+    .button:hover { background: var(--green-deep); transform: translateY(-2px); }
+    .button:focus-visible, a:focus-visible, summary:focus-visible { outline: 3px solid var(--peach); outline-offset: 4px; }
+    .button.secondary { border: 1px solid #bdcbc1; background: transparent; color: var(--green-deep); }
+    .button.secondary:hover { background: var(--mint); }
+    .price-note { margin: 0; color: var(--muted); font-size: 14px; }
+    .hero-art { position: relative; display: flex; justify-content: center; align-items: center; }
+    .hero-portrait { display: block; width: min(100%, 430px); height: auto; max-height: 590px; object-fit: contain; border-radius: 24px; box-shadow: 0 24px 60px #1b443522; }
+    .art-caption { position: absolute; bottom: 18px; left: 0; max-width: 205px; padding: 13px 16px; border: 1px solid var(--line); border-radius: 16px; background: var(--white); color: var(--muted); font-size: 13px; box-shadow: 0 10px 30px #1b443510; }
+    .scroll-hint { position: absolute; left: 0; bottom: 23px; color: #89938d; font-size: 12px; letter-spacing: .12em; text-transform: uppercase; }
+    .section { padding: 94px 0; }
+    .section.white { background: var(--white); }
+    .section.mint { background: var(--mint); }
+    .section-head { display: grid; grid-template-columns: .8fr 1.2fr; gap: 44px; align-items: end; margin-bottom: 40px; }
+    h2 { margin-bottom: 0; font-family: var(--serif); font-size: clamp(36px, 4.4vw, 54px); font-weight: 400; letter-spacing: -.035em; line-height: 1.08; }
+    .section-intro { max-width: 590px; margin: 0; color: var(--muted); font-size: 17px; }
+    .fit-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+    .fit-item { min-height: 130px; padding: 22px 23px; border: 1px solid var(--line); border-radius: 18px; background: var(--white); }
+    .fit-item .number { display: block; margin-bottom: 13px; color: #9c6c56; font-family: var(--serif); font-size: 18px; }
+    .fit-item p { margin: 0; font-size: 16px; line-height: 1.5; }
+    .outcome { display: grid; grid-template-columns: 1fr 1fr; gap: 70px; align-items: start; }
+    .outcome-copy { max-width: 440px; }
+    .outcome-copy p { margin: 19px 0 0; color: var(--muted); }
+    .steps { display: grid; gap: 0; }
+    .step { display: grid; grid-template-columns: 52px 1fr; gap: 17px; padding: 17px 0; border-bottom: 1px solid #c9d8cc; }
+    .step:last-child { border-bottom: 0; }
+    .step-mark { display: grid; width: 42px; height: 42px; place-items: center; border: 1px solid #99b19f; border-radius: 50%; color: var(--green); font-family: var(--serif); font-size: 20px; }
+    .step h3 { margin: 0 0 5px; font-size: 17px; font-weight: 700; }
+    .step p { margin: 0; color: var(--muted); font-size: 15px; }
+    .details { display: grid; grid-template-columns: 1.05fr .95fr; gap: 54px; align-items: start; }
+    .price-card { padding: 36px; border-radius: 24px; background: var(--green-deep); color: white; }
+    .price-card .eyebrow { color: #c4d9c9; }
+    .price-card h2 { margin-top: 17px; }
+    .price { margin: 27px 0 5px; font-family: var(--serif); font-size: 56px; line-height: 1.1; }
+    .price-caption { color: #c8d7cc; font-size: 14px; }
+    .price-card .button { margin-top: 24px; background: var(--white); color: var(--green-deep); }
+    .price-card .button:hover { background: #e7eee8; }
+    .detail-list { display: grid; gap: 0; margin: 0; padding: 0; list-style: none; }
+    .detail-list li { padding: 17px 0; border-bottom: 1px solid var(--line); }
+    .detail-list strong { display: block; margin-bottom: 4px; color: var(--green-deep); }
+    .detail-list span { color: var(--muted); font-size: 15px; }
+    .education { display: grid; grid-template-columns: .8fr 1.2fr; gap: 60px; align-items: start; }
+    .education-intro { color: var(--muted); }
+    .education-intro p { margin: 18px 0 0; }
+    .education-photo { display: block; width: min(100%, 360px); height: auto; max-height: 470px; object-fit: contain; border-radius: 20px; margin: 25px 0 14px; box-shadow: 0 18px 45px #1b44351c; }
+    .timeline { border-top: 1px solid #c8d6cc; }
+    .timeline-row { display: grid; grid-template-columns: 100px 1fr; gap: 20px; padding: 16px 0; border-bottom: 1px solid #c8d6cc; }
+    .timeline-year { color: var(--green); font-family: var(--serif); font-size: 21px; }
+    .timeline-label { align-self: center; }
+    .course-details { margin-top: 8px; border: 0; }
+    .course-details summary { padding: 8px 0; font-size: 14px; }
+    .course-details ol { margin: 0 0 12px; padding-left: 21px; color: var(--muted); font-size: 14px; line-height: 1.5; }
+    .course-details li { margin-bottom: 5px; }
+    .notice { margin-top: 25px; padding: 18px 20px; border-left: 3px solid var(--peach); background: #fffefa9c; color: var(--muted); font-size: 14px; }
+    .review-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; }
+    .review-card { display: flex; flex-direction: column; min-height: 210px; padding: 23px; border: 1px solid var(--line); border-radius: 19px; background: var(--white); }
+    .review-card blockquote { margin: 0 0 20px; color: var(--ink); font-size: 15px; line-height: 1.6; }
+    .review-authorline { display: flex; align-items: center; gap: 12px; margin-top: auto; }
+    .review-avatar { position: relative; width: 54px; height: 54px; flex: 0 0 54px; overflow: hidden; border: 2px solid white; border-radius: 50%; background: var(--mint); box-shadow: 0 3px 12px #1b443522; }
+    .review-avatar img { position: absolute; display: block; width: auto; max-width: none; height: auto; transform: scale(1.35); transform-origin: top left; }
+    .review-avatar.evgenia img { left: -30px; top: -19px; }
+    .review-avatar.margarita img { left: -30px; top: -31px; }
+    .review-author { color: var(--green); font-size: 14px; font-weight: 700; }
+    .case-card { display: block; margin-top: 38px; padding: 22px; border: 1px solid #c8d6cc; border-radius: 22px; background: #f2f6f1; }
+    .case-image-link { display: block; width: min(100%, 1000px); margin: 0 auto; }
+    .case-image { display: block; width: 100%; height: auto; border: 1px solid #e5d5bd; border-radius: 16px; }
+    .faq { display: grid; grid-template-columns: .8fr 1.2fr; gap: 60px; }
+    .faq-list { border-top: 1px solid var(--line); }
+    details { border-bottom: 1px solid var(--line); }
+    summary { padding: 19px 0; color: var(--green-deep); font-weight: 700; cursor: pointer; list-style: none; }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "+"; float: right; color: #9c6c56; font-size: 22px; font-weight: 400; }
+    details[open] summary::after { content: "−"; }
+    details p { max-width: 640px; margin: -3px 30px 19px 0; color: var(--muted); font-size: 15px; }
+    .closing { padding: 88px 0; background: var(--green-deep); color: white; text-align: center; }
+    .closing .eyebrow { color: #c4d9c9; }
+    .closing h2 { max-width: 720px; margin: 18px auto; }
+    .closing p { max-width: 580px; margin: 0 auto; color: #d4dfd7; }
+    .closing .button { margin-top: 27px; background: var(--white); color: var(--green-deep); }
+    footer { padding: 28px 0; background: #102b25; color: #c4d0c8; font-size: 13px; }
+    .footer-inner { display: flex; justify-content: space-between; gap: 20px; align-items: center; }
+    .footer-inner p { margin: 0; }
+    .footer-note { max-width: 620px; text-align: right; }
+    @media (max-width: 820px) {
+      .hero, .section-head, .outcome, .details, .education, .faq, .case-card { grid-template-columns: 1fr; gap: 32px; }
+      .hero { padding-top: 42px; padding-bottom: 80px; }
+      .hero-portrait { max-height: 590px; }
+      .section { padding: 70px 0; }
+      .section-head { align-items: start; }
+      .fit-grid { grid-template-columns: repeat(2, 1fr); }
+      .review-grid { grid-template-columns: repeat(2, 1fr); }
+      .outcome-copy { max-width: 650px; }
+      .details { gap: 35px; }
+      .education { gap: 28px; }
+    }
+    @media (max-width: 540px) {
+      body { font-size: 16px; }
+      .shell { width: min(100% - 34px, 1160px); }
+      .topbar { padding: 18px 0; }
+      .top-note { max-width: 130px; text-align: right; font-size: 12px; }
+      h1 { font-size: 47px; }
+      .hero-copy { font-size: 17px; }
+      .hero-art { margin-top: 4px; }
+      .hero-portrait { width: min(100%, 410px); max-height: 560px; }
+      .art-caption { bottom: 12px; left: 0; }
+      .fit-grid { grid-template-columns: 1fr; gap: 10px; }
+      .review-grid, .case-facts { grid-template-columns: 1fr; }
+      .fit-item { min-height: 0; padding: 18px 19px; }
+      .price-card { padding: 27px 23px; }
+      .case-card { padding: 23px; }
+      .timeline-row { grid-template-columns: 74px 1fr; gap: 12px; }
+      .footer-inner { align-items: flex-start; flex-direction: column; }
+      .footer-note { text-align: left; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition-duration: .01ms !important; }
+    }
+  </style>
+</head>
+<body>
+  <header class="shell topbar">
+    <a class="brand" href="#top" aria-label="Коуч-сессия для женщин — на главную">
+      <span class="brand-mark" aria-hidden="true">Я</span>
+      <span>Индивидуальная коуч-сессия</span>
+    </a>
+    <span class="top-note">Онлайн · 40–60 минут</span>
+  </header>
+
+  <main id="top">
+    <section class="shell hero" aria-labelledby="hero-title">
+      <div>
+        <span class="eyebrow">Коучинг для женщин</span>
+        <h1 id="hero-title">Пора понять, с чего начать</h1>
+        <p class="hero-copy">Есть идеи и желания, но трудно выбрать направление? На индивидуальной онлайн-сессии разберём вашу ситуацию, определим ближайшую цель и наметим конкретный первый шаг.</p>
+        <div class="hero-actions">
+          <a class="button" href="https://wa.me/coach_grafchenkova" target="_blank" rel="noopener noreferrer">Написать в WhatsApp</a>
+          <a class="button secondary" href="https://payform.ru/c9d6K3X/" target="_blank" rel="noopener noreferrer">Оплатить сессию</a>
+          <p class="price-note">40–60 минут · 2 000 ₽</p>
+        </div>
+      </div>
+      <div class="hero-art">
+        <img class="hero-portrait" src="assets/coach-session.png" width="1024" height="1536" alt="Коуч слушает собеседницу и делает заметки во время встречи" fetchpriority="high">
+        <div class="art-caption">Не нужно решить всё сразу. Достаточно выбрать следующий шаг.</div>
+      </div>
+      <span class="scroll-hint">Листайте, чтобы узнать подробности</span>
+    </section>
+
+    <section class="section white" aria-labelledby="fit-title">
+      <div class="shell">
+        <div class="section-head">
+          <div><span class="eyebrow">Это про вас?</span><h2 id="fit-title" style="margin-top:16px">Когда в голове много вариантов</h2></div>
+          <p class="section-intro">Встреча подойдёт, если хочется сдвинуться с места, но пока не получается выделить главное среди сомнений, планов и советов со стороны.</p>
+        </div>
+        <div class="fit-grid">
+          <article class="fit-item"><span class="number">01</span><p>Не получается выбрать одно направление.</p></article>
+          <article class="fit-item"><span class="number">02</span><p>Хотите использовать свои навыки, но не понимаете, как начать.</p></article>
+          <article class="fit-item"><span class="number">03</span><p>Сомневаетесь в решении и боитесь ошибиться.</p></article>
+          <article class="fit-item"><span class="number">04</span><p>Откладываете важный шаг, хотя давно о нём думаете.</p></article>
+          <article class="fit-item"><span class="number">05</span><p>Строите планы, но пока не переходите к действиям.</p></article>
+          <article class="fit-item"><span class="number">06</span><p>Устали от чужих советов и хотите разобраться, чего хотите сами.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section mint" aria-labelledby="result-title">
+      <div class="shell outcome">
+        <div class="outcome-copy">
+          <span class="eyebrow">Что будет на встрече</span>
+          <h2 id="result-title" style="margin-top:16px">От запутанности — к следующему шагу</h2>
+          <p>За одну встречу вы сможете яснее увидеть, чего хотите, определить, что мешает двигаться, выбрать приоритет и составить план первого шага на ближайшую неделю.</p>
+        </div>
+        <div class="steps">
+          <article class="step"><span class="step-mark">1</span><div><h3>Разберём ситуацию</h3><p>Уточним, что происходит сейчас и какой вопрос важнее всего.</p></div></article>
+          <article class="step"><span class="step-mark">2</span><div><h3>Найдём приоритет</h3><p>Отделим ваши желания от давления и лишнего шума.</p></div></article>
+          <article class="step"><span class="step-mark">3</span><div><h3>Сформулируем первый шаг</h3><p>Определим конкретное действие, которое реально сделать на этой неделе.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section white" aria-labelledby="format-title">
+      <div class="shell details">
+        <article class="price-card">
+          <span class="eyebrow">Индивидуальная встреча</span>
+          <h2 id="format-title">Начните с одного разговора</h2>
+          <div class="price">2 000 ₽</div>
+          <div class="price-caption">за одну онлайн-сессию</div>
+          <a class="button" href="https://payform.ru/c9d6K3X/" target="_blank" rel="noopener noreferrer">Оплатить сессию</a>
+        </article>
+        <ul class="detail-list">
+          <li><strong>Формат</strong><span>Онлайн, индивидуально</span></li>
+          <li><strong>Продолжительность</strong><span>40–60 минут</span></li>
+          <li><strong>Подготовка</strong><span>Достаточно прийти со своим вопросом. Специальная подготовка не нужна.</span></li>
+          <li><strong>Перенос встречи</strong><span>Предупредите не менее чем за 24 часа — и мы согласуем новую дату.</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section mint" aria-labelledby="about-title">
+      <div class="shell education">
+        <div class="education-intro">
+          <span class="eyebrow">Профессиональная подготовка</span>
+          <h2 id="about-title" style="margin-top:16px">Внимательно к вашей ситуации</h2>
+          <img class="education-photo" src="assets/coach-portrait.png" width="1024" height="1536" alt="Портрет коуча с блокнотом">
+          <p>На встрече мы разберём ваш запрос, выберем приоритет и наметим реалистичный первый шаг.</p>
+        </div>
+        <div>
+          <div class="timeline" aria-label="Обучение">
+            <div class="timeline-row"><span class="timeline-year">2021</span><span class="timeline-label">Диплом «Мастер гипноза» — Институт развития и научных исследований возможностей человека, 29 июля 2021 года</span></div>
+            <div class="timeline-row"><span class="timeline-year">2023</span><span class="timeline-label">Специалист в сфере практической психологии — Российская академия народного хозяйства и государственной службы при Президенте Российской Федерации (РАНХиГС), Москва. Диплом выдан 29 ноября 2023 года.
+              <details class="course-details">
+                <summary>Изученные дисциплины</summary>
+                <ol>
+                  <li>Общая психология</li>
+                  <li>Возрастная психология</li>
+                  <li>Социальная психология</li>
+                  <li>Психология управления</li>
+                  <li>Психология личности</li>
+                  <li>Основы семейной психологии</li>
+                  <li>Основы психологической диагностики и исследований</li>
+                  <li>Основы психологического консультирования и психотерапии</li>
+                  <li>Виды психологической помощи и технологии её оказания</li>
+                  <li>Клиентоцентричность</li>
+                  <li>Психологические факторы принятия решений и поведения человека в современном мире</li>
+                  <li>Итоговая аттестация</li>
+                </ol>
+              </details>
+            </span></div>
+            <div class="timeline-row"><span class="timeline-year">2024–2025</span><span class="timeline-label">Педагог-психолог — ФГБОУ ВО «Башкирский государственный педагогический университет им. М. Акмуллы», 578 часов. Обучение: 23 апреля 2024 — 23 апреля 2025 года; итоговая аттестация — отлично.
+              <details class="course-details">
+                <summary>Изученные дисциплины</summary>
+                <ol>
+                  <li>Введение в практическую психологию и педагогику — 8 часов</li>
+                  <li>Профессиональная деятельность педагога-психолога — 14 часов</li>
+                  <li>Консультационная деятельность как форма психологической помощи — 18 часов</li>
+                  <li>Методы психодиагностики личности — 8 часов</li>
+                  <li>Психология и коучинг предназначения — 40 часов</li>
+                  <li>Психология и коучинг достижения целей — 50 часов</li>
+                  <li>Психология, психотерапия, коучинг и консультирование семейных и любовных отношений — 30 часов</li>
+                  <li>Психология и коучинг детско-родительских отношений — 20 часов</li>
+                  <li>Психология и коучинг в бизнес-консультировании: управление командами и системами — 60 часов</li>
+                  <li>Подбор и оценка персонала в организации — 16 часов</li>
+                  <li>Стресс-менеджмент — 8 часов</li>
+                  <li>Гештальт-терапия и психодрама в работе коуча, практического психолога и педагога — 19 часов</li>
+                  <li>Применение метафорических ассоциативных карт в коучинге, психологии и консультировании — 9 часов</li>
+                  <li>Методология научного исследования в образовании — 16 часов</li>
+                  <li>Психолого-педагогические технологии в образовании — 15 часов</li>
+                  <li>Методология создания образовательных программ — 30 часов</li>
+                  <li>Моделирование и прогнозирование образовательного процесса — 31 час</li>
+                  <li>Психологическая безопасность в образовании и социальном взаимодействии — 18 часов</li>
+                  <li>Управление педагогическим сопровождением и взаимодействием участников образовательного процесса — 20 часов</li>
+                  <li>Маркетинг и продажи психологических услуг — 40 часов</li>
+                  <li>Практикум — 100 часов</li>
+                  <li>Итоговая аттестация — 8 часов (отлично)</li>
+                </ol>
+              </details>
+            </span></div>
+          </div>
+          <p class="notice">Сессия помогает выбрать направление и спланировать действия. Это не услуга по привлечению клиентов или продвижению бизнеса: продажи, клиенты и конкретный доход не гарантируются.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section white" aria-labelledby="reviews-title">
+      <div class="shell">
+        <div class="section-head">
+          <div><span class="eyebrow">Опыт клиентов</span><h2 id="reviews-title" style="margin-top:16px">Что отмечают после встреч</h2></div>
+          <p class="section-intro">В отзывах клиентки говорят о бережном общении, поддержке и ясности в своих вопросах.</p>
+        </div>
+        <div class="review-grid">
+          <article class="review-card"><blockquote>«Вопросы были настолько деликатные, мягкие и экологичные, что я легко раскрылась и доверилась профессионалу. Коучинговые вопросы дали мне опору».</blockquote><div class="review-author">Анастасия</div></article>
+          <article class="review-card"><blockquote>«С Натальей очень легко и просто работать. Состояние после сессии отличное, появилась цель».</blockquote><div class="review-authorline"><span class="review-avatar evgenia"><img src="assets/review-evgenia.png" alt=""></span><div class="review-author">Евгения</div></div></article>
+          <article class="review-card"><blockquote>«Наталья помогла мне структурировать мысли. Появилась ясность и осознанность».</blockquote><div class="review-authorline"><span class="review-avatar margarita"><img src="assets/review-margarita.png" alt=""></span><div class="review-author">Маргарита</div></div></article>
+          <article class="review-card"><blockquote>«Наталья создала доверительное пространство и расположила к себе своим вниманием».</blockquote><div class="review-author">Клиентка</div></article>
+          <article class="review-card"><blockquote>«Была важна поддержка в моей новой сфере… пришло более ясное понимание, как и что должно быть. Это облегчает начало этой деятельности».</blockquote><div class="review-author">Клиентка</div></article>
+          <article class="review-card"><blockquote>«Благодаря чуткой работе Натальи получил для себя понятный и даже развёрнутый ответ по своему запросу».</blockquote><div class="review-author">Володя</div></article>
+        </div>
+
+        <article class="case-card" aria-label="Цветной кейс клиентки Насти">
+          <a class="case-image-link" href="assets/case-nastya.png" target="_blank" rel="noopener noreferrer" aria-label="Открыть цветной кейс Насти в полном размере">
+            <img class="case-image" src="assets/case-nastya.png" width="1254" height="1254" alt="Цветной кейс Насти: предпринимательница, программа из 12 сессий за три месяца, исходная ситуация и изменения в бизнесе">
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section white" aria-labelledby="faq-title">
+      <div class="shell faq">
+        <div><span class="eyebrow">Перед встречей</span><h2 id="faq-title" style="margin-top:16px">Частые вопросы</h2></div>
+        <div class="faq-list">
+          <details><summary>Что нужно подготовить?</summary><p>Ничего специального. Можно заранее подумать, какой вопрос хочется прояснить, но это не обязательно.</p></details>
+          <details><summary>Можно ли прийти, если я пока не знаю, чего хочу?</summary><p>Да. Начать можно с ощущения неопределённости — вместе уточним, что именно сейчас требует внимания.</p></details>
+          <details><summary>Будет ли достаточно одной встречи?</summary><p>Сессия рассчитана на один актуальный запрос: прояснить ближайшую цель и определить первый шаг. Продолжение не является обязательным.</p></details>
+          <details><summary>Вы поможете найти клиентов или увеличить доход?</summary><p>Нет. На встрече мы работаем с выбором направления и планом действий. Продажи, привлечение клиентов или определённый доход не обещаются.</p></details>
+          <details><summary>Как перенести встречу?</summary><p>Пожалуйста, предупредите не менее чем за 24 часа. Мы согласуем новую дату.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing" id="booking" aria-labelledby="closing-title">
+      <div class="shell">
+        <span class="eyebrow">Можно начать с вопроса</span>
+        <h2 id="closing-title">Расскажите, что хочется прояснить</h2>
+        <p>Напишите коротко о своей ситуации — обсудим, подходит ли вам такая встреча, и договоримся о времени.</p>
+        <p style="margin-top:24px;font-weight:700">Напишите мне в WhatsApp и коротко расскажите, с каким вопросом хотите разобраться. Если мы уже согласовали встречу, оплатить её можно по кнопке ниже.</p>
+        <a class="button secondary" href="https://wa.me/coach_grafchenkova" target="_blank" rel="noopener noreferrer">Написать в WhatsApp</a>
+        <a class="button" href="https://payform.ru/c9d6K3X/" target="_blank" rel="noopener noreferrer">Оплатить сессию · 2 000 ₽</a>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="shell footer-inner">
+      <p>Индивидуальная онлайн-коуч-сессия · 2 000 ₽</p>
+      <p class="footer-note">Информация на странице описывает формат услуги. Результат зависит от запроса и участия клиента; конкретный доход, клиенты и продажи не гарантируются.</p>
+    </div>
+  </footer>
+</body>
+</html>
